@@ -1,4 +1,8 @@
-<html></html>
+<?php
+session_start();
+?>
+
+<html>
  <head>
   <title>
    Iqlas Kreation
@@ -6,6 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
   
 
@@ -26,9 +31,18 @@
       <a href="about.html">ABOUT</a>
       <a href="#">PORTFOLIO</a>
       <a href="#">PRODUCTS</a>
-      <a href="#">CONTACT</a>
+      
+      <!-- liat if user login -->
+      <?php if (isset($_SESSION['username'])): ?>
+        <a href="dashboard.php"> <i class="fa-solid fa-user"></i> <?php echo htmlspecialchars($_SESSION['username']); ?></a>
+      <?php else: ?>
+        <a href="login.php">LOGIN/REGISTER</a>
+      <?php endif; ?>
+
     </nav>
   </header>
+
+  <!-- Ani the Banner rh Home -->
 
   <div class="hero-image">
 
@@ -70,11 +84,10 @@
     </a>
  
  </div>
- 
-
 
   <!-- script js tuk menu -->
   <script src="js/hamburger.js"></script>
+  <script src="https://kit.fontawesome.com/fbacd2348c.js" crossorigin="anonymous"></script>
   
  </body>
 </html>

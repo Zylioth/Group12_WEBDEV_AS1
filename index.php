@@ -18,7 +18,7 @@ session_start();
 
  <body>
   <header>
-    <a href="index.html"><img alt="Iqlas Kreation Logo" height="50" src="Assets/IK_headerLogo.png" width="150"/></a>
+    <a href="index.php"><img alt="Iqlas Kreation Logo" height="50" src="Assets/IK_headerLogo.png" width="150"/></a>
     
     <!-- Hamburger icon for mobile -->
     <div class="hamburger" id="hamburger">

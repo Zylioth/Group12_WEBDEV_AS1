@@ -13,7 +13,7 @@
 <body>
 
 <header>
-    <a href="index.html"><img alt="Iqlas Kreation Logo" height="50" src="Assets/IK_headerLogo.png" width="150"/></a>
+    <a href="index.php"><img alt="Iqlas Kreation Logo" height="50" src="Assets/IK_headerLogo.png" width="150"/></a>
     
     <!-- Hamburger icon for mobile -->
     <div class="hamburger" id="hamburger">
@@ -22,7 +22,7 @@
   
     <!-- Navigation Links -->
     <nav id="nav-menu">
-      <a href="index.html">HOME</a>
+      <a href="index.php">HOME</a>
       <a href="about.html">ABOUT</a>
       <a href="#">PORTFOLIO</a>
       <a href="#">PRODUCTS</a>

@@ -4,9 +4,9 @@ session_start();
 
 <html>
  <head>
-  <title>
-   Iqlas Kreation
-  </title>
+  <title>Iqlas Kreation</title>
+  <link rel="icon" href="Assets/IK_logo.png">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet"/>
@@ -27,8 +27,8 @@ session_start();
   
     <!-- Navigation Links -->
     <nav id="nav-menu">
-      <a class="active" href="index.html">HOME</a>
-      <a href="about.html">ABOUT</a>
+      <a class="active" href="index.php">HOME</a>
+      <a href="about.php">ABOUT</a>
       <a href="#">PORTFOLIO</a>
       <a href="#">PRODUCTS</a>
       
@@ -57,7 +57,7 @@ session_start();
   <div class="sections">
 
     <!-- Link to About Page -->
-    <a href="about.html" class="section-link">
+    <a href="about.php" class="section-link">
       <div class="section">
          <h3>ABOUT</h3>
          <img alt="About Image" src="Assets/Home_about.JPG"/>
@@ -66,7 +66,7 @@ session_start();
     </a>
  
     <!-- Link to Portfolio Page -->
-    <a href="portfolio.html" class="section-link">
+    <a href="portfolio.php" class="section-link">
       <div class="section">
          <h3>PORTFOLIO</h3>
          <img alt="Portfolio Image" src="Assets/Home_portfolio.JPG"/>
@@ -75,7 +75,7 @@ session_start();
     </a>
  
     <!-- Link to Products and Services Page -->
-    <a href="products.html" class="section-link">
+    <a href="products.php" class="section-link">
       <div class="section">
          <h3>PRODUCTS AND SERVICES</h3>
          <img alt="Products and Services Image" src="Assets/Home_prodNserv.JPG"/>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iqlas Kreation - login</title>
+    <link rel="icon" href="Assets/IK_logo.png">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
@@ -12,7 +13,7 @@
 </head>
 <body>
 
-<header>
+  <header>
     <a href="index.php"><img alt="Iqlas Kreation Logo" height="50" src="Assets/IK_headerLogo.png" width="150"/></a>
     
     <!-- Hamburger icon for mobile -->
@@ -23,7 +24,7 @@
     <!-- Navigation Links -->
     <nav id="nav-menu">
       <a href="index.php">HOME</a>
-      <a href="about.html">ABOUT</a>
+      <a href="about.php">ABOUT</a>
       <a href="#">PORTFOLIO</a>
       <a href="#">PRODUCTS</a>
       <a href="#">CONTACT</a>

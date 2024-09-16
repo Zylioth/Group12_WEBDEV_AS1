@@ -8,8 +8,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="css/style.css">
 
-  
-
  </head>
 
  <body>

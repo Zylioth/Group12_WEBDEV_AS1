@@ -11,23 +11,9 @@
  </head>
 
  <body>
-  <header>
-    <a href="index.php"><img alt="Iqlas Kreation Logo" height="50" src="Assets/IK_headerLogo.png" width="150"/></a>
-    
-    <!-- Hamburger icon for mobile -->
-    <div class="hamburger" id="hamburger">
-      <i class="fas fa-bars"></i>
-    </div>
+  <!-- pakai include so code nda messy -->
   
-    <!-- Navigation Links -->
-    <nav id="nav-menu">
-      <a href="index.php">HOME</a>
-      <a class="active" href="about.html">ABOUT</a>
-      <a href="#">PORTFOLIO</a>
-      <a href="#">PRODUCTS</a>
-      <a href="login.php">LOGIN/REGISTER</a>
-    </nav>
-  </header>
+ <?php include 'includes/header.php'; ?>
 
   <div class="tagline">Tailoring Perfection, One Suit at a Time</div>
 

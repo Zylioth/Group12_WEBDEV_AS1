@@ -17,30 +17,10 @@ session_start();
  </head>
 
  <body>
-  <header>
-    <a href="index.php"><img alt="Iqlas Kreation Logo" height="50" src="Assets/IK_headerLogo.png" width="150"/></a>
-    
-    <!-- Hamburger icon for mobile -->
-    <div class="hamburger" id="hamburger">
-      <i class="fas fa-bars"></i>
-    </div>
-  
-    <!-- Navigation Links -->
-    <nav id="nav-menu">
-      <a class="active" href="index.php">HOME</a>
-      <a href="about.php">ABOUT</a>
-      <a href="#">PORTFOLIO</a>
-      <a href="#">PRODUCTS</a>
-      
-      <!-- liat if user login -->
-      <?php if (isset($_SESSION['username'])): ?>
-        <a href="dashboard.php"> <i class="fa-solid fa-user"></i> <?php echo htmlspecialchars($_SESSION['username']); ?></a>
-      <?php else: ?>
-        <a href="login.php">LOGIN/REGISTER</a>
-      <?php endif; ?>
 
-    </nav>
-  </header>
+ <!-- pakai include so code nda messy -->
+  
+ <?php include 'includes/header.php'; ?>
 
   <!-- Ani the Banner rh Home -->
 

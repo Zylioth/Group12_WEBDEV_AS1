@@ -51,7 +51,8 @@ nav a {
 nav a:hover {
   color: #b38b59;
 }
-.active {
+
+#nav-menu a.active {
   color: #b38b59;
 }
 
@@ -343,8 +344,9 @@ footer {
   margin: 5px 0;
 }
 
-.footer-right a:link {
+.footer-right a {
   text-decoration: none;
+  color: #333;
 }
 
 .footer-bottom {
@@ -396,5 +398,37 @@ footer {
 
   .vision-section p {
     font-size: 16px;
+  }
+}
+
+
+/* Footer Responsive tuk tlipun */
+@media screen and (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .footer-right {
+      margin-top: 20px;
+      text-align: center;
+  }
+
+  .footer-left img {
+      height: 40px; 
+  }
+}
+
+@media screen and (max-width: 480px) {
+  footer {
+      padding: 15px 20px;
+  }
+
+  .footer-right p {
+      font-size: 14px; 
+  }
+
+  .footer-bottom {
+      font-size: 12px;
   }
 }

@@ -13,6 +13,8 @@
             Bandar Seri Begawan, BE1118 
             </p>
 
+
+            <!-- Logo tuk contacts -->
             <a href="https://api.whatsapp.com/message/SQ2SQVRJYRUFG1"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
             <a href="https://www.instagram.com/iqlaskreation"><i class="fa-brands fa-instagram fa-2x"></i></a>
         </div>

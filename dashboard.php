@@ -15,7 +15,19 @@ if (!isset($_SESSION['user_id'])) {
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+<?php include 'includes/header.php' ?>
+
   <h1>Welcome, <?php echo $_SESSION['username']; ?></h1>
   <a href="Functions/logout.php">Logout</a>
+
+
+  <!-- ani is the footer -->
+  <?php include 'includes/footer.php'; ?> 
+
+  <!-- script js tuk menu -->
+  <script src="js/hamburger.js"></script>
+  <script src="https://kit.fontawesome.com/fbacd2348c.js" crossorigin="anonymous"></script>
+  
 </body>
 </html>

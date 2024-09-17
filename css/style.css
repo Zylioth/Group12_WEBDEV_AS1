@@ -178,6 +178,58 @@ caption rh index.html */
   }
 }
 
+/* Sini Start CSS tuk Appointment Form */
+
+.appointment-form {
+  background-color: #f9f9f9; /* Light background color */
+  padding: 20px; /* Spacing inside the form */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a 3D effect */
+  width: 100%;
+  max-width: 500px; /* Maximum width for the form */
+  margin: 20px auto; /* Center the form */
+}
+
+.appointment-form h2 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.appointment-form label {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+.appointment-form input[type="date"],
+.appointment-form input[type="time"],
+.appointment-form textarea {
+  width: 100%; 
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.appointment-form input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #b38b59;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.appointment-form input[type="submit"]:hover {
+  background-color: #5f492f; 
+}
+
 
 /* Start sini are About.html punya CSS */
 
@@ -430,5 +482,22 @@ footer {
 
   .footer-bottom {
       font-size: 12px;
+  }
+}
+
+/* Responsive css for Appointment Form */
+
+@media (max-width: 600px) {
+  .appointment-form {
+      padding: 15px;
+      max-width: 90%; /* Adjust form width for smaller screens */
+  }
+
+  .appointment-form input[type="submit"] {
+      font-size: 16px; /* Adjust button font size */
+  }
+
+  .appointment-form textarea {
+      height: 100px; /* Adjust textarea height */
   }
 }

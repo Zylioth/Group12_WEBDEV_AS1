@@ -19,7 +19,7 @@ session_start();
  <body>
 
  <!-- pakai include so code nda messy -->
-  
+
  <?php include 'includes/header.php'; ?>
 
   <!-- Ani the Banner rh Home -->
@@ -33,6 +33,27 @@ session_start();
    </div>
 
   </div>
+
+
+  <div class="appointment-form">
+
+    <!-- Booking Appointment Fomr -->
+  <h2>Book an Appointment</h2>
+    <form action="Functions/appointment.php" method="POST">
+        <label for="date">Select Date:</label><br>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <label for="time">Select Time:</label><br>
+        <input type="time" id="time" name="time" required><br><br>
+
+        <label for="details">Details:</label><br>
+        <textarea id="details" name="details" rows="4" cols="50" placeholder="Any specific instructions or details"></textarea><br><br>
+
+        <input type="submit" value="Book Appointment">
+    </form>
+
+  </div>
+
 
   <div class="sections">
 

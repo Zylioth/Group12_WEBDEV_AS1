@@ -343,6 +343,10 @@ footer {
   margin: 5px 0;
 }
 
+.footer-right a:link {
+  text-decoration: none;
+}
+
 .footer-bottom {
   text-align: center;
   margin-top: 10px;

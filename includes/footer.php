@@ -12,6 +12,9 @@
             The Walk, Kg Beribi, Gadong B,<br>
             Bandar Seri Begawan, BE1118 
             </p>
+
+            <a href="https://api.whatsapp.com/message/SQ2SQVRJYRUFG1"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/iqlaskreation"><i class="fa-brands fa-instagram"></i></a>
         </div>
     </div>
     <div class="footer-bottom">

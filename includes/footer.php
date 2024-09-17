@@ -8,13 +8,13 @@
             <p>Email: info@iqlaskreation.com</p>
             <p>Phone: +673 747 3022</p>
             <p>
-            Address: Unit C1 & C2,2nd floor,Block C,<br>
+            Address: Unit C1 & C2, 2nd floor,Block C,<br>
             The Walk, Kg Beribi, Gadong B,<br>
             Bandar Seri Begawan, BE1118 
             </p>
 
-            <a href="https://api.whatsapp.com/message/SQ2SQVRJYRUFG1"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="https://www.instagram.com/iqlaskreation"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://api.whatsapp.com/message/SQ2SQVRJYRUFG1"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+            <a href="https://www.instagram.com/iqlaskreation"><i class="fa-brands fa-instagram fa-2x"></i></a>
         </div>
     </div>
     <div class="footer-bottom">

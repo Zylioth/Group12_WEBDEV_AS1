@@ -312,6 +312,46 @@ caption rh index.html */
   width: 40%;
 }
 
+
+/* CSS tuk footer */
+
+
+footer {
+  background-color: #d8cb9e;
+  padding: 20px 50px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #b38b59;
+}
+
+.footer-left img {
+  height: 50px;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-right p {
+  margin: 5px 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+
+
 /* Responsive Design for Mobile tuk About.html*/
 @media (max-width: 768px) {
   .about-section {

@@ -1,8 +1,20 @@
-<div class="footer">
-    <div class="content">
-        <h1>Iqlas Kreation</h1>
-
-
-
+<footer>
+    <div class="footer-container">
+        <div class="footer-left">
+            <img src="Assets/IK_headerLogo.png" alt="Iqlas Kreation Logo" height="50" width="150"/>
+        </div>
+        <div class="footer-right">
+            <p><strong>Contact Us</strong></p>
+            <p>Email: info@iqlaskreation.com</p>
+            <p>Phone: +673 747 3022</p>
+            <p>
+            Address: Unit C1 & C2,2nd floor,Block C,<br>
+            The Walk, Kg Beribi, Gadong B,<br>
+            Bandar Seri Begawan, BE1118 
+            </p>
+        </div>
     </div>
-</div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Iqlas Kreation Sdn Bhd. All Rights Reserved.</p>
+    </div>
+</footer>

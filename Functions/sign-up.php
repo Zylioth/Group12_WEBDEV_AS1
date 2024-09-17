@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $stmt = $conn->prepare("INSERT INTO users (username, email, password) VALUES (?, ?, ?)");
             $stmt->bind_param('sss', $username, $email, $hashedPassword);
             if ($stmt->execute()) {
-                header('Location: login.php'); // Redirect to login page
+                header('Location: login.php'); // Ani redirect to login page
             } else {
                 echo "Error registering user.";
             }

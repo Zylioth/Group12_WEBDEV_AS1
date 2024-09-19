@@ -365,6 +365,28 @@ caption rh index.html */
   width: 40%;
 }
 
+/* Dashboard sma appt-table punya CSS semua below here */
+
+.appointment-meja {
+  width: 80%; 
+  margin: 20px auto; 
+  border-collapse: collapse; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.appointment-meja th {
+  background-color: #333; 
+  color: white; 
+  padding: 12px;
+  text-align: center;
+}
+
+.appointment-meja td {
+  padding: 12px; 
+  text-align: center; 
+  border-bottom: 1px solid #ddd;
+  font-size: 18px;
+}
 
 /* CSS tuk footer */
 
@@ -374,6 +396,8 @@ footer {
   padding: 20px 50px;
   color: #333;
   font-family: 'Roboto', sans-serif;
+  width: auto;
+  margin-top: auto;
 }
 
 .footer-container {
@@ -382,6 +406,7 @@ footer {
   align-items: center;
   padding-bottom: 20px;
   border-bottom: 1px solid #b38b59;
+  flex-wrap: wrap;
 }
 
 .footer-left img {
@@ -499,5 +524,17 @@ footer {
 
   .appointment-form textarea {
       height: 100px; /* Adjust textarea height */
+  }
+}
+
+/* small screen punya ver for upc appt dashboard */
+
+@media (max-width: 768px) {
+  .appointment-meja {
+    width: 95%; /* Increase table width on smaller screens */
+  }
+
+  .appointment-meja th, .appointment-meja td {
+    padding: 10px; /* Reduce padding for smaller screens */
   }
 }

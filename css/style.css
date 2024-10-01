@@ -538,3 +538,158 @@ footer {
     padding: 10px; /* Reduce padding for smaller screens */
   }
 }
+
+/* Login Page form punya CSS */
+
+/* div tuk login form */
+.login-user {
+  background-color: #fff;
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-user h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.login-user form label {
+  font-size: 16px;
+  color: #333;
+  display: block;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.login-user form input[type="text"], 
+.login-user form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+
+.login-user form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #b38b59;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-user form input[type="submit"]:hover {
+  background-color: #94683a;
+}
+
+
+.login-user p {
+  font-size: 14px;
+  color: #333;
+}
+
+.login-user p a {
+  color: #b38b59;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-user p a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 600px) {
+  .login-user {
+      margin: 50px 20px;
+      padding: 20px;
+  }
+}
+
+
+/* Register Form punya CSS */
+
+.register-form {
+  background-color: #fff;
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.register-form h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.register-form form label {
+  font-size: 16px;
+  color: #333;
+  display: block;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.register-form form input[type="text"], 
+.register-form form input[type="email"], 
+.register-form form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.register-form form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #b38b59;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register-form form button:hover {
+  background-color: #94683a;
+}
+
+.register-form p {
+  font-size: 14px;
+  color: #333;
+}
+
+.register-form p a {
+  color: #b38b59;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.register-form p a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 600px) {
+  .register-form {
+      margin: 50px 20px;
+      padding: 20px;
+  }
+}

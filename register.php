@@ -13,26 +13,11 @@
 </head>
 <body>
 
-<header>
-    <a href="index.php"><img alt="Iqlas Kreation Logo" height="50" src="Assets/IK_headerLogo.png" width="150"/></a>
-    
-    <!-- Hamburger icon for mobile -->
-    <div class="hamburger" id="hamburger">
-      <i class="fas fa-bars"></i>
-    </div>
-  
-    <!-- Navigation Links -->
-    <nav id="nav-menu">
-      <a href="index.php">HOME</a>
-      <a href="about.html">ABOUT</a>
-      <a href="#">PORTFOLIO</a>
-      <a href="#">PRODUCTS</a>
-      <a href="#">CONTACT</a>
-      <a class="active" href="login.php" >LOGIN/REGISTER</a>
-    </nav>
-  </header>
+ <!-- pakai include so code nda messy -->
 
-  <div class="form-container">
+ <?php include 'includes/header.php'; ?>
+
+  <div class="register-form">
     <h2>Register</h2>
     <form action="register.php" method="POST">
       <label for="username">Username</label>

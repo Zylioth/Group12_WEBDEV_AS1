@@ -20,6 +20,6 @@
         </div>
     </div>
     <div class="footer-bottom">
-        <p>&copy; 2024 Iqlas Kreation Sdn Bhd. All Rights Reserved.</p>
+        <p>&copy; 2024 Iqlas Kreation Sdn Bhd.| Created by WEBDEV Team 12 </p>
     </div>
 </footer>

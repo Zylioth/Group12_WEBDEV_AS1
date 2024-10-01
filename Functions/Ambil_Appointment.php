@@ -2,7 +2,7 @@
 
 include 'database/db.php'; // supaya ia connect to our db
 
-// ani will grab current login user punya appt
+// ani will grab current login user punya appt details
 $user_id = $_SESSION['user_id'];
 $query = "SELECT appointment_date, appointment_time,status, details 
           FROM appointments 

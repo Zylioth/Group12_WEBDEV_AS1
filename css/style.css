@@ -788,3 +788,36 @@ footer {
       padding: 20px;
   }
 }
+
+
+/* Portfolio page punya CSS */
+
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.portfolio-item {
+  width: 300px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.portfolio-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.portfolio-item h3 {
+  margin: 10px 0;
+}
+
+.portfolio-item a {
+  color: #333;
+  text-decoration: none;
+  margin: 5px;
+  display: inline-block;
+}

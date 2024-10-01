@@ -19,35 +19,36 @@ if (!isset($_SESSION['user_id'])) {
 
 <?php include 'includes/header.php' ?>
 
-  <h1>Welcome, <?php echo $_SESSION['username']; ?></h1>
-  <a href="Functions/logout.php">Logout</a>
+<div class="dashboard-container">
 
-  <h2>Your Upcoming Appointments: </h2>
+      <h2>Your Upcoming Appointments: </h2>
 
-  <?php include 'Functions/Ambil_Appointment.php'; ?>
+      <?php include 'Functions/Ambil_Appointment.php'; ?>
 
-  <!-- buat table arh dashboard spya user dpot liat coming appt -->
+      <!-- buat table arh dashboard spya user dpot liat coming appt -->
 
-  <?php if ($result && $result->num_rows > 0): ?>
-    <table class="appointment-meja" border="1" cellpadding="10" cellspacing="0">
-        <tr>
-            <th>Date</th>
-            <th>Time</th>
-            <th>Details</th>
-            <th>Status</th>
-        </tr>
-        <?php while ($row = $result->fetch_assoc()): ?>
-        <tr>
-            <td><?php echo date('F d, Y', strtotime($row['appointment_date'])); ?></td>
-            <td><?php echo date('h:i A', strtotime($row['appointment_time'])); ?></td>
-            <td><?php echo ($row['details']); ?></td> 
-            <td><?php echo ($row['status']); ?></td>
-        </tr>
-        <?php endwhile; ?>
-    </table>
-<?php else: ?>
-    <p>No upcoming appointments found.</p>
-<?php endif; ?>
+      <?php if ($result && $result->num_rows > 0): ?>
+        <table class="appointment-meja" border="1" cellpadding="10" cellspacing="0">
+            <tr>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Details</th>
+                <th>Status</th>
+            </tr>
+            <?php while ($row = $result->fetch_assoc()): ?>
+            <tr>
+                <td><?php echo date('F d, Y', strtotime($row['appointment_date'])); ?></td>
+                <td><?php echo date('h:i A', strtotime($row['appointment_time'])); ?></td>
+                <td><?php echo ($row['details']); ?></td> 
+                <td><?php echo ($row['status']); ?></td>
+            </tr>
+            <?php endwhile; ?>
+        </table>
+    <?php else: ?>
+        <p>No upcoming appointments found.</p>
+    <?php endif; ?>
+   
+</div>    
 
 
   <!-- ani is the footer -->

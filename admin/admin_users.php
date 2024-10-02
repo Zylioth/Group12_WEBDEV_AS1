@@ -24,17 +24,8 @@ $result = $conn->query($query);
 <body>
 
 <div class="admin-dashboard">
-    <aside class="sidebar">
-        <h2>Welcome, <?php echo htmlspecialchars($_SESSION['admin_username']); ?></h2>
-        <nav>
-            <ul>
-                <li><a href="admin_dashboard.php">Dashboard</a></li>
-                <li><a href="admin_users.php">Users</a></li>
-                <li><a href="admin_portfolio.php">Portfolio</a></li>
-                <li><a href="Functions/logout.php">Logout</a></li>
-            </ul>
-        </nav>
-    </aside>
+
+        <?php include 'includes/sidebar.php' ; ?>
 
     <main class="main-content">
         <h1>Manage Users</h1>
@@ -58,7 +49,7 @@ $result = $conn->query($query);
                             <td><?php echo htmlspecialchars($user['username']); ?></td>
                             <td><?php echo htmlspecialchars($user['email']); ?></td>
                             <td>
-                                <a href="edit_user.php?id=<?php echo $user['id']; ?>" class="btn">Edit</a>
+                                <a href="edit_user.php?id=<?php echo $user['id']; ?>" class="btn" onclick="return confirm('Are you sure you want to edit this user?');">Edit</a>
                                 <a href="delete_user.php?id=<?php echo $user['id']; ?>" class="btn" onclick="return confirm('Are you sure you want to delete this user?');">Delete</a>
                             </td>
                         </tr>

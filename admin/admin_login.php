@@ -34,7 +34,7 @@ session_start();
         
         <input type="submit" value="Login">
     </form>
-    <p>Back to <a href="index.php">Homepage</a></p>
+    <p>Back to <a href="../index.php">Homepage</a></p>
 </div>
 
 </body>

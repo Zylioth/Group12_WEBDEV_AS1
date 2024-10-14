@@ -30,7 +30,7 @@ $result = $conn->query($query);
     <main class="main-content">
         <h1>Manage Appointments</h1>
 
-        <!-- Add Appointment button -->
+        <!-- Appointment buton -->
         <a href="add_appointment.php" class="btn">Add New Appointment</a>
 
         <!-- Display Appointments Table -->

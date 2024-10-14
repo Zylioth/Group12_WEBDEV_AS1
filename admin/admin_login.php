@@ -11,7 +11,7 @@ session_start();
     <link rel="icon" href="Assets/IK_logo.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body style="background: rgb(216,203,144);background: linear-gradient(90deg, rgba(216,203,144,1) 22%, rgba(199,175,98,1) 100%);">
 
 <div class="login-container">
     <h2>Admin Login</h2>
@@ -32,7 +32,7 @@ session_start();
         <label for="admin_password">Password:</label>
         <input type="password" id="admin_password" name="admin_password" required>
         
-        <input type="submit" value="Login">
+        <input type="submit" value="Login" style=" width: 100%; ">
     </form>
     <p>Back to <a href="../index.php">Homepage</a></p>
 </div>

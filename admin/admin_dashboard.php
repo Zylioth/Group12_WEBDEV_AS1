@@ -24,17 +24,17 @@ include 'Functions/countdata.php';
             <h2>Summary</h2>
             <div class="card-container">
                 <div class="card">
-                    <i class="fas fa-users card-icon"></i> <!-- Font Awesome icon for users -->
+                    <i class="fas fa-users card-icon"></i> <!-- Ani icon for users -->
                     <p>Total Users</p>
                     <p class="card-number"><?php echo htmlspecialchars($total_users); ?></p>
                 </div>
                 <div class="card">
-                    <i class="fas fa-trophy card-icon" style="color: #FFD43B;"></i> <!-- Font Awesome icon for portfolio -->
+                    <i class="fas fa-trophy card-icon" style="color: #FFD43B;"></i> <!-- Ani icon for portfolio -->
                     <p>Total Portfolio Items</p>
                     <p class="card-number"><?php echo htmlspecialchars($total_portfolio); ?></p>
                 </div>
                 <div class="card">
-                <i class="fas fa-calendar-check card-icon" style="color: #74C0FC;"></i> <!-- Font Awesome icon for portfolio -->
+                <i class="fas fa-calendar-check card-icon" style="color: #74C0FC;"></i> <!-- Ani icon for Appointment -->
                     <p>Total Appointments Items</p>
                     <p class="card-number"><?php echo htmlspecialchars($total_appointment); ?></p>
                 </div>

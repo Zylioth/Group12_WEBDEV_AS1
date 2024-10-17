@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Insert the portfolio item into the database
     $query = "INSERT INTO portfolio (title, description, image_url) VALUES ('$title', '$description', '$image_url')";
     if ($conn->query($query)) {
-        header('Location: manage_portfolio.php');
+        header('Location: admin_portfolio.php');
         exit();
     } else {
         echo "Error: " . $conn->error;

@@ -9,4 +9,4 @@
                 <li><a href="Functions/logout.php">Logout</a></li>
             </ul>
         </nav>
-    </aside>
+</aside>

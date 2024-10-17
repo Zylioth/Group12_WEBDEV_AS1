@@ -207,6 +207,75 @@ caption rh index.html */
 }
 
 
+/* Responsive for sections rh index.php bawah */
+
+@media (max-width: 1024px) {
+  .sections {
+    flex-direction: column; /* Stack sections vertically on tablets */
+    padding: 50px 0;
+  }
+  
+  .sections .section {
+    width: 90%; /* Slightly reduce section width */
+  }
+
+  .sections .section img {
+    width: 100%; /* Ensure images fit the section width */
+  }
+
+  .sections .section .caption {
+    width: 100%; /* Adjust caption width */
+  }
+
+  .section h3 {
+    font-size: 18px; /* Slightly smaller heading on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .sections {
+    padding: 40px 0; /* Reduce padding on smaller screens */
+  }
+
+  .sections .section {
+    width: 100%; /* Full width for small screens */
+  }
+
+  .sections .section img {
+    width: 100%; /* Images take full width */
+  }
+
+  .sections .section .caption {
+    width: 100%; /* Full width caption */
+    font-size: 16px; /* Slightly smaller caption text */
+    padding: 8px;
+  }
+
+  .section h3 {
+    font-size: 16px; /* Smaller heading for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .sections {
+    padding: 30px 0; /* Less padding for mobile */
+  }
+
+  .sections .section img {
+    width: 100%; /* Full width images */
+  }
+
+  .sections .section .caption {
+    font-size: 14px; /* Smaller font for mobile captions */
+    padding: 6px;
+  }
+
+  .section h3 {
+    font-size: 14px; /* Smaller heading for mobile */
+  }
+}
+
+
 /* Responsive layout tuk telipun or small device */
 @media (max-width: 768px) {
   nav {

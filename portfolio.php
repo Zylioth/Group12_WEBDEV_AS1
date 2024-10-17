@@ -36,5 +36,7 @@ $result = $conn->query($query);
     <?php endif; ?>
 
     <?php include 'includes/footer.php'; ?>
+
+    <script src="https://kit.fontawesome.com/fbacd2348c.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <html>
  <head>
   <title> Iqlas Kreation - About Us </title>
@@ -116,6 +120,7 @@
  
   <!-- script js tuk menu -->
   <script src="js/hamburger.js"></script>
-
+  <script src="https://kit.fontawesome.com/fbacd2348c.js" crossorigin="anonymous"></script>
+  
  </body>
 </html>

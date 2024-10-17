@@ -31,9 +31,6 @@ $result = $conn->query($query);
         <?php endwhile; ?>
     </div>
 
-    <?php if (isset($_SESSION['is_admin']) && $_SESSION['is_admin']): ?>
-        <a href="add_portfolio.php">Add New Portfolio Item</a>
-    <?php endif; ?>
 
     <?php include 'includes/footer.php'; ?>
 

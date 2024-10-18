@@ -2,11 +2,11 @@
 
 include 'database/db.php'; // supaya ia connect to our db
 
-// ani will grab current login user punya appt details
+// ani will grab current login user punya all appt details
 $user_id = $_SESSION['user_id'];
-$query = "SELECT appointment_date, appointment_time,status, details 
+$query = "SELECT * 
           FROM appointments 
-          WHERE user_id = ? AND appointment_date >= CURDATE() 
+          WHERE user_id = ?  
           ORDER BY appointment_date ASC, appointment_time ASC";
 
 if ($stmt = $conn->prepare($query)) {

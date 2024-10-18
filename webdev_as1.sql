@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 01, 2024 at 03:55 PM
+-- Generation Time: Oct 18, 2024 at 05:56 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -61,9 +61,9 @@ CREATE TABLE `appointments` (
 --
 
 INSERT INTO `appointments` (`id`, `user_id`, `appointment_date`, `appointment_time`, `status`, `details`) VALUES
-(2, 2, '2024-09-19', '12:00:00', 'Pending', 'Testing purpiose only'),
-(4, 1, '2024-09-20', '10:30:00', 'Pending', 'Kan potong and sukat baju'),
-(5, 1, '2024-10-02', '19:00:00', 'Pending', 'asdaasd asd asdad asd as d');
+(6, 2, '2024-10-15', '17:00:00', 'Completed', 'alter seluar'),
+(7, 2, '2024-10-17', '12:30:00', 'Confirmed', 'Please come for appointment on the set date'),
+(8, 2, '2024-10-18', '17:21:00', 'Pending', 'testing sdaja ');
 
 -- --------------------------------------------------------
 
@@ -85,7 +85,11 @@ CREATE TABLE `portfolio` (
 --
 
 INSERT INTO `portfolio` (`id`, `title`, `description`, `image_url`, `created_at`, `updated_at`) VALUES
-(1, 'Project Title', 'This is a description of the project.', 'http://example.com/image.jpg', '2024-10-01 12:00:15', '2024-10-01 12:00:15');
+(1, 'Project Title', 'This is a description of the project.', '67108bfa3c51b-melona.jfif', '2024-10-01 12:00:15', '2024-10-17 11:19:13'),
+(2, 'Achievements', 'Lorem Ipsum do re mi', 'Home_prodNserv.JPG', '2024-10-17 11:12:59', '2024-10-17 11:25:25'),
+(3, 'Achievements', 'Lorem Ipsum do re mi', '67108bfa3c51b-melona.jfif', '2024-10-17 11:14:11', '2024-10-17 11:25:42'),
+(4, 'asasasa ', 'asasasasa', 'Home_prodNserv.JPG', '2024-10-17 11:14:38', '2024-10-17 11:25:30'),
+(5, 'SQL QUERY', 'Lorem ipsu m Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumv Lorem ipsum', '6710f26515c40-Zyl Padoru close v2.png', '2024-10-17 11:17:57', '2024-10-17 11:17:57');
 
 -- --------------------------------------------------------
 
@@ -156,13 +160,13 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `appointments`
 --
 ALTER TABLE `appointments`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `portfolio`
 --
 ALTER TABLE `portfolio`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `users`

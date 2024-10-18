@@ -90,6 +90,7 @@ session_start();
   <?php include 'includes/footer.php'; ?> 
 
   <!-- script js tuk menu -->
+  <script src="js/hamburger.js"></script>
   <script src="https://kit.fontawesome.com/fbacd2348c.js" crossorigin="anonymous"></script>
   
  </body>

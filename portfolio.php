@@ -1,8 +1,8 @@
 <?php
 session_start();
-include 'database/db.php'; // Connection to the database
+include 'database/db.php';
 
-// Fetch portfolio items from the database
+// amibl all from portfolio table
 $query = "SELECT * FROM portfolio";
 $result = $conn->query($query);
 ?>
@@ -34,6 +34,7 @@ $result = $conn->query($query);
 
     <?php include 'includes/footer.php'; ?>
 
+    <script src="js/hamburger.js"></script>
     <script src="https://kit.fontawesome.com/fbacd2348c.js" crossorigin="anonymous"></script>
 </body>
 </html>

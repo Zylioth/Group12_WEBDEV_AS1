@@ -10,6 +10,7 @@ body {
   font-family: 'Playfair Display', serif;
   margin: 0;
   padding: 0;
+  width: auto;
   background-color: #f8f8f8;
 }
 header {
@@ -40,8 +41,9 @@ nav {
   cursor: pointer;
 }
 
-/* Header rh everypage */
-/* Styling for user-menu */
+/* Header and User Menu Styling */
+
+/* User menu container */
 .user-menu {
   position: relative;
   display: inline-block;
@@ -71,12 +73,12 @@ nav {
   transition: background-color 0.2s ease;
 }
 
-/* Change background color on hover */
+/* Hover effect for dropdown links */
 .dropdown-menu a:hover {
   background-color: #f0f0f0;
 }
 
-/* Show the dropdown menu when hovering over the username */
+/* Show the dropdown menu on hover */
 .user-menu:hover .dropdown-menu {
   display: block;
 }
@@ -90,28 +92,83 @@ nav {
   text-decoration: none;
 }
 
-/* Ensure the menu doesn't break the layout */
+/* Prevent layout breaking */
 .user-menu .dropdown-menu {
   white-space: nowrap;
 }
 
-
-
+/* Navigation links styling */
 nav a {
-  margin: 0 50px;
+  margin: 0 30px; /* Reduced margin for responsiveness */
   text-decoration: none;
   color: #333;
   font-size: 18px;
   font-weight: 500;
   transition: color 0.3s ease-in-out;
 }
+
+/* Hover effect for nav links */
 nav a:hover {
   color: #b38b59;
 }
 
+/* Active link color */
 #nav-menu a.active {
   color: #b38b59;
 }
+
+/* Media Query for Small Screens (Tablets and Phones) */
+@media (max-width: 768px) {
+  /* Adjust navigation layout */
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Navigation links: Reduce margin for small screens */
+  nav a {
+    margin: 10px 0; /* Stack the links vertically */
+    font-size: 16px; /* Reduce font size */
+  }
+
+  /* Center the user menu dropdown for smaller screens */
+  .user-menu .dropdown-menu {
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 100px; /* Reduce width */
+  }
+
+  .username {
+    font-size: 14px; /* Adjust size for small screens */
+  }
+}
+
+/* Media Query for Extra Small Screens (Mobile Phones) */
+@media (max-width: 480px) {
+  nav {
+    flex-direction: column;
+  }
+
+  /* Stack nav links and reduce spacing */
+  nav a {
+    margin: 8px 0;
+    font-size: 14px;
+  }
+
+  /* Adjust the user menu for mobile view */
+  .user-menu .dropdown-menu {
+    left: 0;
+    right: 0;
+    transform: none;
+    min-width: auto;
+  }
+
+  .username {
+    font-size: 12px;
+  }
+}
+
 
 /* Banner image */
 .hero-image {
@@ -489,6 +546,72 @@ caption rh index.html */
 
 .vision-section .vision-column div{
   width: 40%;
+}
+
+/* Responsive for about.php */
+/* adjust the font rh small screen */
+
+@media (max-width: 1024px) {
+  .about-section h1 {
+    font-size: 48px; 
+  }
+
+  .about-section .columns,
+  .mission-section .mission-column,
+  .vision-section .vision-column {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .about-section .columns div,
+  .mission-section .mission-column div,
+  .vision-section .vision-column div {
+    width: 100%; 
+    margin-bottom: 20px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section h1 {
+    font-size: 36px; 
+  }
+
+  .about-section p,
+  .mission-section p,
+  .vision-section p {
+    font-size: 18px; 
+  }
+
+  .mission-section h2,
+  .vision-section h2 {
+    font-size: 32px; 
+  }
+
+  .about-section-backimage {
+    width: 100%; 
+    height: auto; 
+    top: auto; 
+    right: auto;
+    opacity: 0.05; 
+  }
+}
+
+@media (max-width: 480px) {
+  .tagline {
+    font-size: 16px; 
+  }
+
+  .about-section h1,
+  .mission-section h2,
+  .vision-section h2 {
+    font-size: 28px; 
+  }
+
+  .about-section p,
+  .mission-section p,
+  .vision-section p {
+    font-size: 16px; 
+  }
 }
 
 /* Dashboard sma appt-table punya CSS semua below here */

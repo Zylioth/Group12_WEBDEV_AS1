@@ -15,6 +15,17 @@ if (!isset($_SESSION['user_id'])) {
   <link rel="icon" href="Assets/IK_logo.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
+<style>
+html,body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+</style>
+
 <body>
 
 <?php include 'includes/header.php' ?>
@@ -39,8 +50,8 @@ if (!isset($_SESSION['user_id'])) {
             <tr>
                 <td><?php echo date('F d, Y', strtotime($row['appointment_date'])); ?></td>
                 <td><?php echo date('h:i A', strtotime($row['appointment_time'])); ?></td>
-                <td><?php echo ($row['details']); ?></td> 
-                <td><?php echo ($row['status']); ?></td>
+                <td><?php echo htmlspecialchars($row['details']); ?></td> 
+                <td><?php echo htmlspecialchars($row['status']); ?></td>
             </tr>
             <?php endwhile; ?>
         </table>

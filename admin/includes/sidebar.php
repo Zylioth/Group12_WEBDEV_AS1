@@ -1,5 +1,6 @@
-<aside class="sidebar">
-        <h2>Welcome, <?php echo htmlspecialchars($_SESSION['admin_username']); ?></h2>
+<!-- tambah id for js -->
+<aside class="sidebar" id="sidebar"> 
+        <h2>Iqlas Kreation</h2>
         <nav>
             <ul>
                 <li><i class="fas fa-chart-line"></i><a href="admin_dashboard.php">Dashboard</a></li>

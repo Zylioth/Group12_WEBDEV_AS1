@@ -5,9 +5,9 @@
 
 /* Body Styling for Flex Centering */
 body {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   height: 100vh;
   margin: 0;
   font-family: 'roboto';
@@ -19,7 +19,7 @@ body {
   display: flex;
   width: 100%;
   min-height: 100vh;
-  background-color: #f4f6f8;
+  background-color: white;
 }
 
 /* Card Container */
@@ -31,7 +31,7 @@ body {
 
 /* Individual Cards */
 .card {
-  flex: 1; /* Make sure cards take equal space */
+  flex: 1; /* supaya space equal */
   background-color: #ffffff;
   border-radius: 8px;
   padding: 20px;
@@ -72,6 +72,83 @@ body {
   }
 }
 
+/* Quick Actions punya CSS */
+.quick-actions {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f4f6f8; 
+  border-radius: 8px; 
+}
+
+.quick-actions h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333; 
+}
+
+.quick-link {
+  display: inline-block; 
+  margin: 30px; 
+  padding: 12px 20px; 
+  background-color: #007bff; 
+  color: white; 
+  text-decoration: none; 
+  border-radius: 4px; 
+  font-size: 16px; 
+  transition: background-color 0.3s ease; 
+}
+
+/* Hover effect for buttons */
+.quick-link:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .quick-actions {
+      text-align: center; 
+  }
+
+  .quick-link {
+      width: 65%; 
+      margin: 10px 0; 
+}
+
+}
+
+/* Header Styling */
+.admin-header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  background-color: #c7af62; 
+  color: white; 
+  padding: 15px 20px; 
+  position: relative; 
+  z-index: 1000; 
+}
+
+.hamburger {
+  cursor: pointer; 
+  font-size: 24px; 
+}
+
+.welcome-message {
+  font-size: 18px; 
+}
+
+.welcome-message p {
+  margin: 0; 
+  text-align: right; 
+}
+
+
+.hamburger:hover {
+  color: #FFD43B; 
+  transition: color 0.3s; 
+}
+
+
 /* Sidebar Styling */
 .sidebar {
   width: 250px;
@@ -80,16 +157,23 @@ body {
   padding: 20px;
   display: flex;
   flex-direction: column;
+  transition: width 0.3s ease; /* Smooth transition for width change */
 }
 
-.sidebar h2 {
-  color: #fff;
-  margin-bottom: 20px;
+.sidebar.collapsed {
+  width: 0;
+  overflow: hidden;
+  transform: translateX(-100%);
 }
 
-.sidebar nav ul {
-  list-style: none;
-  padding: 0;
+.sidebar h2, .sidebar nav ul {
+  opacity: 1;
+  transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+.sidebar.collapsed h2, .sidebar.collapsed nav ul {
+  opacity: 0; /* Hide sidebar content when collapsed */
+  pointer-events: none; /* Disable interactions */
 }
 
 .sidebar nav ul li {
@@ -108,19 +192,24 @@ body {
   padding: 10px 15px;
   border-radius: 5px;
   transition: background-color 0.3s;
-  display: inline-block; 
+  display: inline-block;
 }
 
 .sidebar nav ul li a:hover {
   background-color: #555;
 }
 
-
 /* Main Content Styling */
 .main-content {
   flex-grow: 1;
   padding: 30px;
   background-color: #fff;
+  transition: margin-left 0.3s ease; /* Smooth transition for content shift */
+  margin-left: 0; 
+}
+
+.main-content.sidebar-collapsed {
+  margin-left: 0; 
 }
 
 .main-content h1 {
@@ -135,6 +224,26 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Hamburger icon styling */
+.hamburger {
+  cursor: pointer;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c7af62;
+  color: white;
+  padding: 10px;
+}
+
+.welcome-message {
+  font-size: 16px;
+}
+
 /* Responsive */
 @media screen and (max-width: 768px) {
   .admin-dashboard {
@@ -142,13 +251,20 @@ body {
   }
   
   .sidebar {
-    /* supaya nda overlap */
-    width: auto; 
+    width: 100%; /* Make sidebar full width on small screens */
+    height: auto; /* Auto height for content */
     text-align: center;
   }
 
   .main-content {
     padding: 20px;
+    margin-left: 0; /* Reset margin for small screens */
+  }
+
+  .sidebar.collapsed {
+    width: 0;
+    height: 0;
+    transform: translateX(-100%);
   }
 }
 
@@ -342,7 +458,7 @@ body {
 }
 
 
-/* css Form Container utk add appointmnets */
+/* css Form Container utk most forms in admin */
 
 .form-container {
   max-width: 600px;
@@ -463,4 +579,77 @@ body {
 
 .users-table .btn.delete:hover {
   background-color: #c0392b;
+}
+
+
+/* table form CSS for addUser */
+
+/* Form Styling */
+form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 20px auto; /* Center the form horizontally */
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+form button {
+  background-color: #333;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #555;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  form {
+    max-width: 100%; /* Adjust to full width on smaller screens */
+    padding: 20px;
+  }
+
+  form label {
+    font-size: 14px;
+  }
+
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="password"] {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  form button {
+    font-size: 14px;
+    padding: 10px;
+  }
 }

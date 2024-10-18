@@ -10,7 +10,7 @@ if (!isset($_SESSION['admin_id'])) {
     exit();
 }
 
-// Fetch portfolio item based on ID
+// Fetch portfolio ikut ID
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
     $query = "SELECT * FROM portfolio WHERE id = $id";
@@ -18,14 +18,14 @@ if (isset($_GET['id'])) {
     $portfolio = $result->fetch_assoc();
 }
 
-// Update portfolio item
+// Update portfolio 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $id = $_POST['id'];
     $title = $_POST['title'];
     $description = $_POST['description'];
     $image_url = $portfolio['image_url']; // Default to current image
 
-    // Handle file upload if a new image is provided
+    // Handle if a new image is provided
     if (isset($_FILES['image']) && $_FILES['image']['error'] === 0) {
         $image_name = $_FILES['image']['name'];
         $image_tmp = $_FILES['image']['tmp_name'];

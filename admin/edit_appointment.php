@@ -43,6 +43,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <title>Edit Appointment</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+</style>
+
+
 <body>
 <div class="login-container">
     <h2>Edit Appointment</h2>

@@ -15,8 +15,13 @@ include 'Functions/countdata.php';
     
 </head>
 <body>
+    
+    <!-- header -->
+    <?php include 'includes/header.php'; ?>
+
 
 <div class="admin-dashboard">
+
     <?php include 'includes/sidebar.php'; ?>
 
     <main class="main-content">
@@ -38,21 +43,22 @@ include 'Functions/countdata.php';
                 <i class="fas fa-calendar-check card-icon" style="color: #74C0FC;"></i> <!-- Ani icon for Appointment -->
                     <p>Total Appointments Items</p>
                     <p class="card-number"><?php echo htmlspecialchars($total_appointment); ?></p>
-                </div>
+                </div>                
             </div>
         </div>
+
+        <!-- Quick Actions buttons -->
+        <section class="quick-actions">
+            <h2>Quick Actions</h2>
+            <a href="add_user.php" class="quick-link">Add New User</a>
+            <a href="add_appointment.php" class="quick-link">Create Appointment</a>
+            <a href="edit_portfolio.php" class="quick-link">Edit Portfolio Items</a>
+        </section>
+
     </main>
 </div>
 
-<script>
-    // Hamburger menu toggle
-    const sidebar = document.getElementById('sidebar');
-    const hamburger = document.getElementById('hamburger');
-
-    hamburger.addEventListener('click', function() {
-        sidebar.classList.toggle('show');
-    });
-</script>
+    <script src="js/hamburger.js"></script>
 
 </body>
 </html>

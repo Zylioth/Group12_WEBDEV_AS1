@@ -11,6 +11,18 @@ session_start();
     <link rel="icon" href="Assets/IK_logo.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
+<!-- I use display flex, sal its gonna stick on top without it -->
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>
+
 <body style="background: rgb(216,203,144);background: linear-gradient(90deg, rgba(216,203,144,1) 22%, rgba(199,175,98,1) 100%);">
 
 <div class="login-container">

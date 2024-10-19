@@ -35,5 +35,7 @@
 
   <?php include 'Functions/sign-in.php'; ?> <!-- Including the PHP logic -->
     
+  <script src="js/hamburger.js"></script>
+
 </body>
 </html>

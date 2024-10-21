@@ -26,6 +26,11 @@ body, html {
 <body style="background: rgb(216,203,144);background: linear-gradient(90deg, rgba(216,203,144,1) 22%, rgba(199,175,98,1) 100%);">
 
 <div class="login-container">
+  
+    <div class="image-container">
+        <img alt="Iqlas Kreation Logo" height="50" src="../Assets/IK_headerLogo.png" width="150"/>
+    </div>
+    
     <h2>Admin Login</h2>
 
     <?php if (isset($_SESSION['error'])): ?>

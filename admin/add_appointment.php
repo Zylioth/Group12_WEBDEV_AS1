@@ -2,6 +2,10 @@
 session_start();
 include '../database/db.php';
 
+// admin can dropdown to select users ikut nama
+$user_query = "SELECT id, CONCAT(id, ' - ', username) AS user_display FROM users ORDER BY id ASC"; 
+$user_result = $conn->query($user_query);
+
 // Handle form submission
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $user_id = $_POST['user_id'];
@@ -54,7 +58,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         <form action="add_appointment.php" method="POST" class="form-container">
             <label for="user_id">User ID:</label>
-            <input type="number" id="user_id" name="user_id" required>
+            <select id="user_id" name="user_id" required>
+                <option value="">Select User</option> <!-- Default option -->
+                <?php while ($row = $user_result->fetch_assoc()): ?>
+                    <option value="<?php echo $row['id']; ?>">
+                        <?php echo htmlspecialchars($row['user_display']); ?>
+                    </option>
+                <?php endwhile; ?>
+            </select>
 
             <label for="appointment_date">Appointment Date:</label>
             <input type="date" id="appointment_date" name="appointment_date" required>

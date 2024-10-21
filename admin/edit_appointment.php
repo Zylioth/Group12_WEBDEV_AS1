@@ -9,10 +9,10 @@ if (!isset($_SESSION['admin_id'])) {
 
 $id = $_GET['id'];
 
-// Fetch appointment details by ID
+// ambil appointment details ikut ID
 $query = "SELECT * FROM appointments WHERE id = ?";
 $stmt = $conn->prepare($query);
-$stmt->bind_param('i', $id);  // Bind appointment ID as integer
+$stmt->bind_param('i', $id);  // bgi tau ID is 'integer'
 $stmt->execute();
 $result = $stmt->get_result();
 $appointment = $result->fetch_assoc();
@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Update appointment details
     $updateQuery = "UPDATE appointments SET appointment_date = ?, appointment_time = ?, status = ?, details = ? WHERE id = ?";
     $stmt = $conn->prepare($updateQuery);
-    $stmt->bind_param('ssssi', $appointment_date, $appointment_time, $status, $details, $id);  // Bind all as strings, except the ID
+    $stmt->bind_param('ssssi', $appointment_date, $appointment_time, $status, $details, $id);  // bgi tau semua s as strings and i as integer
     $stmt->execute();
 
     header('Location: admin_appointment.php');

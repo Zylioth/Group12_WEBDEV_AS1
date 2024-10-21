@@ -11,7 +11,7 @@
       <a href="index.php" class="<?php if (basename($_SERVER['PHP_SELF']) == 'index.php') echo 'active'; ?>">HOME</a>
       <a href="about.php" class="<?php if (basename($_SERVER['PHP_SELF']) == 'about.php') echo 'active'; ?>">ABOUT</a>
       <a href="portfolio.php" class="<?php if (basename($_SERVER['PHP_SELF']) == 'portfolio.php') echo 'active'; ?>">PORTFOLIO</a>
-      <a href="#" class="<?php if (basename($_SERVER['PHP_SELF']) == 'products.php') echo 'active'; ?>">PRODUCTS</a>
+      <a href="products.php" class="<?php if (basename($_SERVER['PHP_SELF']) == 'products.php') echo 'active'; ?>">PRODUCTS</a>
       
       <!-- Check if user is logged in -->
       <?php if (isset($_SESSION['username'])): ?>

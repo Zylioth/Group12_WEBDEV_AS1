@@ -69,5 +69,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </form>
     </main>
 </div>
+
+<script src="js/hamburger.js"></script>
+
 </body>
 </html>

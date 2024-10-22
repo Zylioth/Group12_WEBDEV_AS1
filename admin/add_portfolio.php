@@ -14,11 +14,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $description = $_POST['description'];
     $image_url = '';
 
-    // Handle file upload
+    // Handle gambar yg bru upload
     if (isset($_FILES['image']) && $_FILES['image']['error'] === 0) {
         $image_name = $_FILES['image']['name'];
         $image_tmp = $_FILES['image']['tmp_name'];
-        $image_url = uniqid() . '-' . $image_name; // To avoid conflicts
+        $image_url = uniqid() . '-' . $image_name; // To avoid conflicts klau ada same img name
         move_uploaded_file($image_tmp, "../uploads/" . $image_url);
     }
 
